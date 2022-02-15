@@ -22,6 +22,17 @@ body {
   position: relative;
 }
 
+/* Create Main Line of the timeline -- centered with icons */
+.wrapper .center-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
 .wrapper .row {
   display: flex;
 }
@@ -44,35 +55,55 @@ body {
   border-radius: 5px;
 }
 
-/* .wrapper .row section::before {
-
+/* Create the right and left arrows of each section's bubble  */
+.wrapper .row section::before {
+  position: absolute;
+  content: "";
+  top: 28px;
+  z-index: -1;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  transform: rotate(45deg);
 }
 
 .row-1 section::before {
-
+  right: -7px;
 }
 
 .row-2 section::before {
-
+  left: -7px;
 }
 
 .row section .icon,
 .center-line .scroll-icon {
-
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #f2f2f2;
+  color: rgba(216, 127, 244, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .center-line .scroll-icon {
-
-} */
-
+  bottom: 0;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
 .row-1 section .icon {
-  top: 15px;
+  top: 13px;
   right: -60px;
 }
 
 .row-2 section .icon {
-  top: 15px;
-  right: -60px;
+  top: 13px;
+  left: -60px;
 }
 
 .row section .details,
