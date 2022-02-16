@@ -6,4 +6,4 @@ Click and scroll here: https://nathlo.github.io/vertical-timeline/
 
 
 # vertical-timeline
-A Responsive Timeline and vertically scrollable
+A Responsive Timeline vertically scrollable
